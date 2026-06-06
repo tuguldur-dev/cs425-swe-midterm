@@ -4,7 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lab.midterm.model.Appointment;
+import lab.midterm.model.Director;
 import lab.midterm.repository.AppointmentRepository;
+import lab.midterm.repository.DirectorRepository;
 import lab.midterm.service.AppointmentService;
 
 import java.time.LocalDate;
@@ -39,6 +41,10 @@ public class App {
         System.out.println("=".repeat(70));
         System.out.println("  4.2.2  QUARTERLY UPCOMING APPOINTMENTS");
         System.out.println("         Sorted by Appointment Date & Time [ ASCENDING ]");
+
+        Director director = DirectorRepository.findById(1);
+        System.out.println("         Requested by : " + director.getFirstName() + " "
+                + director.getLastName() + " (" + director.getTitle() + ")");
         System.out.println("=".repeat(70));
         System.out.println();
 
