@@ -1,5 +1,7 @@
 # ADS Dental Management System
 
+**Repository:** [github.com/tuguldur-dev/cs425-swe-midterm](https://github.com/tuguldur-dev/cs425-swe-midterm)
+
 ## Diagrams
 
 ### Context Diagram
@@ -19,6 +21,10 @@
 - **Java 21** (JDK or JRE)
 - **Maven 3.9+** (for building and running via Maven)
 
+## Clone project
+```bash
+git clone https://github.com/tuguldur-dev/cs425-swe-midterm
+```
 ## Run the Application
 
 From the project root directory:
